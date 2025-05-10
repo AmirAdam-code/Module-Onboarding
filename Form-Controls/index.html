@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Form Exercise</title>
+  <meta name="description" content="Form exercise for collecting t-shirt order info." />
+</head>
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+
+  <main>
+    <form>
+      <!-- 1. Customer's Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" minlength="2" required />
+      <br><br>
+
+      <!-- 2. Customer's Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br><br>
+
+      <!-- 3. Choose Colour -->
+      <fieldset>
+        <legend>Select a Colour:</legend>
+        <label><input type="radio" name="color" value="red" required /> Red</label>
+        <label><input type="radio" name="color" value="blue" /> Blue</label>
+        <label><input type="radio" name="color" value="black" /> Black</label>
+      </fieldset>
+      <br>
+
+      <!-- 4. Choose Size -->
+      <label for="size">Select Size:</label>
+      <select id="size" name="size" required>
+        <option value="">--Choose Size--</option>
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select>
+      <br><br>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+
+  <footer>
+    <h2>By AMIR ADAM</h2>
+  </footer>
+</body>
 </html>
